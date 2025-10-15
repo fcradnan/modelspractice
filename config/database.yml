@@ -19,6 +19,11 @@ development:
 test:
   <<: *default
   database: storage/test.sqlite3
+development:
+  adapter: sqlite3
+  database: db/development.sqlite3
+  pool: 5
+  timeout: 5000
 
 
 # Store production database in the storage/ directory, which by default
