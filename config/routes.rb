@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  get "doctors/index"
+  get "doctors/show"
+  get "doctors/new"
+  get "doctors/create"
+  get "doctors/edit"
+  get "doctors/update"
+  get "doctors/destroy"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.

@@ -41,10 +41,11 @@ appointments = []
   appointments << Appointment.create!(
     doctor: doctor,
     patient: patient,
-    date: Time.now + rand(1..10).days,
+    date: Time.current,
     status: ["Scheduled", "Completed", "Cancelled"].sample
   )
 end
+
 puts "Created #{appointments.size} appointments"
 
 # ---- Prescriptions ----
